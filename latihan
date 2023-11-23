@@ -1,0 +1,22 @@
+import math
+def dapatBhgnInteger (nom):
+    return math.floor(nom)
+
+def dapatBhgnPecahan(nom):
+    nom = nom - math.floor(nom)
+    return round(nom, 5)
+
+def paparkan(nom, integer, pecahan):
+    print("Nombor = ", nom)
+    print("Bahagian integer : ", integer)
+    print("Bahagian integer : ", pecahan)
+    print("")
+
+nom = 1
+while (nom!= 0):
+    nom = float(input("Masukkan satu nombor float [0 untuk henti] = "))
+    x = dapatBhgnInteger(nom)
+    y = dapatBhgnPecahan(nom)
+    paparkan(nom, x, y)
+
+print("Tamat.")
