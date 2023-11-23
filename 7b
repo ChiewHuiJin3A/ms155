@@ -1,0 +1,14 @@
+def bundar(x, n):
+    nom = (x*(10**n)) + 0.5
+    nom2 = int(nom) / 10**n
+    return (nom2)
+nom = 1
+#while nom > 0:
+try:
+    nom = float(input("Masukkan satu nombor float [0 untuk berhenti]:"))
+    if nom > 0:
+        b = int(input("Masukkan nilai tempat perpuluhan"))
+        print(bundar(nom,b))
+except ValueError:
+    pass
+
